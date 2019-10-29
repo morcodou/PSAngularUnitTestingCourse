@@ -53,7 +53,7 @@ describe('HeroesComponent (shallow test)', () => {
     expect(fixture.componentInstance.heroes.length).toBe(0);
   });
 
-  it('should set heroes correctely from the service', () => {
+  it('should set heroes correctly from the service', () => {
     mockHeroService.getHeroes.and.returnValue(of(HEROS));
     fixture.detectChanges();
 
